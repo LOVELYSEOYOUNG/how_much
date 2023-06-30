@@ -57,6 +57,8 @@ public class FragMenu extends Fragment {
                     //clicked 식량작물
                 }else if(position==1){
                     //clicked 채소류
+                    Intent intent = new Intent(getActivity(), VesiMain.class);
+                    startActivity(intent);
                 }else if(position==2){
                     //clicked 특용작물
                 }else if(position==3){

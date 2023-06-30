@@ -1,5 +1,10 @@
 package com.example.myapplication.bottomnavigation;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+import com.example.myapplication.R;
 
 import android.os.AsyncTask;
 import android.view.LayoutInflater;
@@ -43,15 +48,17 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
 
-public class FragSearch extends Fragment {
-    private View view;
 
+
+public class VesiMain extends AppCompatActivity {
+    //------------------------------------------------------------------------------------------
     private static final String TAG = "MainActivity";
     String API_KEY = "58891361-85af-4d37-bca6-be0dea50fe7f";
     //api에서 데이터 가져오고 파싱
     List<String> categoryCodes = Arrays.asList("400", "200"); // 카테고리 코드
-    List<Map<String, String>> fruits = new ArrayList<>(); // 과일 정보를 저장할 리스트
+
     List<Map<String, String>> veges = new ArrayList<>(); // 채소 정보를 저장할 리스트
+
     boolean flag = false;
     boolean b = true;
 
@@ -92,13 +99,15 @@ public class FragSearch extends Fragment {
     }
 
 
-    @Nullable
+    //-----------------------------------------------------------------------------------------
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.frag_search, container, false);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.vesi_main);
 
-        System.out.println(fruits.size());
         System.out.println(veges.size());
+
+
         if (b == true) {
             new Thread(() -> {
                 for (String code : categoryCodes) {
@@ -140,9 +149,7 @@ public class FragSearch extends Fragment {
                             info.put("dpr2", getTagValue("dpr2", eElement));
                             info.put("dpr3", getTagValue("dpr3", eElement));
 
-                            if (code.equals("400")) {
-                                fruits.add(info);
-                            } else if (code.equals("200")) {
+                            if (code.equals("200")) {
                                 veges.add(info);
                             }
 
@@ -156,13 +163,10 @@ public class FragSearch extends Fragment {
             }
         }
 
-        System.out.println("Fruits: " + fruits.size());
         System.out.println("Vegetables: " + veges.size());
 
 
-        List<Integer> drawables = Arrays.asList(R.drawable.apple, R.drawable.pear,
-                R.drawable.mandarin, R.drawable.banana, R.drawable.kiwi, R.drawable.pineapple,
-                R.drawable.orange, R.drawable.lemon, R.drawable.cherry, R.drawable.mango,
+        List<Integer> drawables = Arrays.asList(
                 R.drawable.kimchicabbage, R.drawable.cabbage, R.drawable.spinach, R.drawable.redlettuce,
                 R.drawable.lettuce, R.drawable.wintercabbage, R.drawable.watermelon, R.drawable.orientalmelon,
                 R.drawable.dadagi, R.drawable.cucumber, R.drawable.babypumpkin, R.drawable.zukini, R.drawable.tomato,
@@ -178,14 +182,14 @@ public class FragSearch extends Fragment {
         ArrayList<DataModel> testDataSet = new ArrayList<>();
 
 
-        // For fruits
-        for (int i = 0; i < fruits.size(); i++) {
-            String item_name = fruits.get(i).get("item_name");
-            String dpr1 = fruits.get(i).get("dpr1");
-            String dpr3 = fruits.get(i).get("dpr3");
+        // For fruits////////////////
+        for (int i = 0; i < veges.size(); i++) {
+            String item_name = veges.get(i).get("item_name");
+            String dpr1 = veges.get(i).get("dpr1");
+            String dpr3 = veges.get(i).get("dpr3");
 
             int drawableId;
-            drawableId = R.drawable.apple;
+            drawableId = R.drawable.default_vege;
 
             if (i < drawables.size()) {
                 drawableId = drawables.get(i);
@@ -198,76 +202,23 @@ public class FragSearch extends Fragment {
 
         }
 
-        // For vegetables
-        for (int i = 0; i < veges.size(); i++) {
-            String item_name = veges.get(i).get("item_name");
-            String dpr1 = veges.get(i).get("dpr1");
-            String dpr3 = veges.get(i).get("dpr3");
 
-            int drawableId;
-            drawableId = R.drawable.default_vege;  // you may need a different default image for vegetables
-
-            if (i + fruits.size() < drawables.size()) {
-                drawableId = drawables.get(i + fruits.size());
-            } else {
-                // Default drawableId if there are not enough drawables
-                drawableId = R.drawable.default_image;
-            }
-
-            testDataSet.add(new DataModel(item_name, drawableId, dpr1, dpr3));
-        }
-
-
-        //========================================================
-
-        RecyclerView recyclerView = view.findViewById(R.id.recyclerView);
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
+        RecyclerView recyclerView = findViewById(R.id.recyclerView);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         //LinearLayoutManager linearLayoutManager = new LinearLayoutManager((Context) this);
         recyclerView.setLayoutManager(linearLayoutManager);  // LayoutManager 설정
 
-        DBHelper DB = new DBHelper(getContext());
+        DBHelper DB = new DBHelper(this);
         //DBHelper DB = new DBHelper(this);
         CustomAdapter customAdapter = new CustomAdapter(testDataSet, DB);
         recyclerView.setAdapter(customAdapter); // 어댑터 설정
 
         ArrayList<DataModel> search_list = new ArrayList<>();
 
-        EditText editText;
 
-        editText = view.findViewById(R.id.editText);
 
-        editText.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
-            }
-
-            @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable editable) {
-                String searchText = editText.getText().toString();
-                search_list.clear();
-
-                if (searchText.equals("")) {
-                    customAdapter.setItems(testDataSet);
-                } else {
-                    // 검색 단어를 포함하는지 확인
-                    for (int a = 0; a < testDataSet.size(); a++) {
-                        if (testDataSet.get(a).title.toLowerCase().contains(searchText.toLowerCase())) {
-                            search_list.add(testDataSet.get(a));
-                        }
-                        customAdapter.setItems(search_list);
-                    }
-                }
-            }
-        });
-        return view;
     }
-
 
     private Document convertStringToDocument(String xmlStr) {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
@@ -283,4 +234,18 @@ public class FragSearch extends Fragment {
         return null;
     }
 
+
+
+
+
+
+
+
+
+
 }
+
+
+
+
+

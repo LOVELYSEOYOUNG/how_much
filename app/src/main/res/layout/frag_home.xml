@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgro"
+    android:background="@drawable/main_button3"
     android:orientation="vertical">
 
 
@@ -25,16 +25,16 @@
         android:id="@+id/title_home"
         android:layout_width="115dp"
         android:layout_height="25dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="35dp"
         android:text=" 오늘은 얼마니"
         android:textColor="#F1C40F"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/ads_text"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintHorizontal_bias="0.52749"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.166" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button1"
@@ -45,24 +45,35 @@
         android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.548"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.741" />
+        app:layout_constraintVertical_bias="0.731" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="227dp"
         android:layout_height="46dp"
         android:backgroundTint="#00000000"
-        android:text="오늘은 얼마니 추천ITEM"
+        android:text="오늘은 얼마니 추천 ITEM"
         android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.548"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.862" />
+        app:layout_constraintVertical_bias="0.836" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="379dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#00000000"
+        android:text="중 대형 유통업체 할인행사 정보"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.939" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

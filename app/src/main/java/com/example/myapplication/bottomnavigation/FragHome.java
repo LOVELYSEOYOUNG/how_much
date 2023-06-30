@@ -22,6 +22,7 @@ public class FragHome extends Fragment {
     ViewFlipper v_filpper;
     Button button1;
     Button button2;
+    Button button3;
 
     @Nullable
     @Override
@@ -62,6 +63,16 @@ public class FragHome extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), RecommandMain.class);
+                startActivity(intent);
+
+            }
+        });
+
+        button3 = view.findViewById(R.id.button3);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), OnSale.class);
                 startActivity(intent);
 
             }

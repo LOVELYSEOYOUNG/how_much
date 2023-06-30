@@ -1,0 +1,882 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/onsale"
+    tools:context=".bottomnavigation.OnSale">
+
+
+    <TextView
+        android:id="@+id/title_home"
+        android:layout_width="115dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="35dp"
+        android:text=" 오늘은 얼마니"
+        android:textColor="#F1C40F"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52748"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="주간 알뜰 장보기"
+    android:textSize="14sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.127"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.135" />
+
+    <TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="중대형 유통업체 할인행사 정보"
+    android:textSize="14sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.172"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.198" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="단위:원"
+        android:textSize="7sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.251" />
+
+    <TextView
+    android:id="@+id/textView4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="구분"
+    android:textSize="10sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.122"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.304" />
+
+    <TextView
+    android:id="@+id/textView38"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="구분"
+    android:textSize="10sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.122"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.646" />
+
+    <TextView
+    android:id="@+id/textView5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="이마트"
+    android:textSize="10sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.309"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.284" />
+
+    <TextView
+    android:id="@+id/textView39"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="탑 마트"
+    android:textSize="10sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.309"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.625" />
+
+    <TextView
+    android:id="@+id/textView6"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="롯데마트"
+    android:textSize="10sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.579"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.284" />
+
+    <TextView
+    android:id="@+id/textView44"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="메가마트"
+    android:textSize="10sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.58"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.625" />
+
+    <TextView
+    android:id="@+id/textView7"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="홈플러스"
+    android:textSize="10sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.841"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.284" />
+
+    <TextView
+    android:id="@+id/textView45"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="GS 더 프레시"
+    android:textSize="10sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.859"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.625" />
+
+    <TextView
+    android:id="@+id/textView8"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="품명"
+    android:textSize="10sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.251"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.324" />
+
+
+    <TextView
+    android:id="@+id/textView40"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="품명"
+    android:textSize="10sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.254"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.667" />
+
+    <TextView
+    android:id="@+id/textView9"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="품명"
+    android:textSize="10sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.511"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.324" />
+
+    <TextView
+    android:id="@+id/textView42"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="품명"
+    android:textSize="10sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.511"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.667" />
+
+    <TextView
+    android:id="@+id/textView10"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="품명"
+    android:textSize="10sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.765"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.324" />
+
+    <TextView
+    android:id="@+id/textView46"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="품명"
+    android:textSize="10sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.765"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.667" />
+
+    <TextView
+    android:id="@+id/textView11"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="행사가"
+    android:textSize="10sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.377"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.324" />
+
+    <TextView
+    android:id="@+id/textView41"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="행사가"
+    android:textSize="10sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.377"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.667" />
+
+    <TextView
+    android:id="@+id/textView12"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="행사가"
+    android:textSize="10sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.64"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.324" />
+
+    <TextView
+    android:id="@+id/textView43"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="행사가"
+    android:textSize="10sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.64"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.667" />
+
+    <TextView
+    android:id="@+id/textView13"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="행사가"
+    android:textSize="10sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.898"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.324" />
+
+    <TextView
+    android:id="@+id/textView47"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="행사가"
+    android:textSize="10sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.898"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.667" />
+
+    <TextView
+    android:id="@+id/textView14"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="농산"
+    android:textSize="9sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.122"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.389" />
+
+    <TextView
+    android:id="@+id/textView48"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="농산"
+    android:textSize="9sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.124"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.733" />
+
+    <TextView
+    android:id="@+id/textView23"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="축산"
+    android:textSize="9sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.122"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.46" />
+
+    <TextView
+    android:id="@+id/textView49"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="축산"
+    android:textSize="9sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.121"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.805" />
+
+    <TextView
+    android:id="@+id/textView50"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="수산"
+    android:textSize="9sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.121"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.853" />
+
+    <TextView
+    android:id="@+id/textView24"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="수산"
+    android:textSize="9sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.121"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.504" />
+
+    <TextView
+    android:id="@+id/textView15"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="자두\n신비복숭아\n브로콜리\n하우스 감귤\n새송이 버섯\n파프리카\n레몬"
+    android:textSize="8sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.222"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.382" />
+
+    <TextView
+    android:id="@+id/textView51"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="천도 복숭아\n하우스 감귤\n미국산 체리\n감자\n팽이버섯\n신비복숭아\n아보카도"
+    android:textSize="8sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.221"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.753" />
+
+    <TextView
+    android:id="@+id/textView25"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="한우 등심구이\n양념 LA갈비\n와규 모둠팩"
+    android:textSize="8sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.225"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.465" />
+
+    <TextView
+    android:id="@+id/textView57"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="호주산 와규등심\n대패목심\n냉장 불고기"
+    android:textSize="8sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.228"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.81" />
+
+    <TextView
+    android:id="@+id/textView61"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="한우등심\n냉장 삼겹살\n살치살"
+    android:textSize="8sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.488"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.81" />
+
+    <TextView
+    android:id="@+id/textView63"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="풍천장어\n전복\n생오징어"
+    android:textSize="8sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.478"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.861" />
+
+    <TextView
+    android:id="@+id/textView32"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="바다장어\n생오징어\n손질고등어"
+    android:textSize="8sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.22"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.861" />
+
+    <TextView
+    android:id="@+id/textView59"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="제주 갈치\n흰다리 새우\n민물장어"
+    android:textSize="8sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.22"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.511" />
+
+    <TextView
+    android:id="@+id/textView34"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="활전복\n손질오징어\n민물장어"
+    android:textSize="8sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.496"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.515" />
+
+    <TextView
+    android:id="@+id/textView36"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="생물갈치\n손질오징어\n꽃게"
+    android:textSize="8sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.753"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.515" />
+
+    <TextView
+    android:id="@+id/textView67"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="손질 오징어\n새꼬막\n완도 전복"
+    android:textSize="6.5sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.748"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.861" />
+
+    <TextView
+    android:id="@+id/textView35"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="14,000\n   3,960\n29,600"
+    android:textSize="8sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.658"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.515" />
+
+    <TextView
+    android:id="@+id/textView37"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="6,000\n1,990\n1,890"
+    android:textSize="8sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.922"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.515" />
+
+    <TextView
+    android:id="@+id/textView27"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="한돈 삼겹살\n냉장 우삼겹\n한우 등심"
+    android:textSize="8sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.464" />
+
+    <TextView
+    android:id="@+id/textView29"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="돼지 항정살\n살치살\n부채살"
+    android:textSize="8sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.757"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.465" />
+
+    <TextView
+    android:id="@+id/textView65"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="한돈 삼겹\n한돈 오겹\n한돈 목심"
+    android:textSize="8sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.74"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.81" />
+
+    <TextView
+    android:id="@+id/textView19"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="복숭아\n체리\n그린키위\n감자\n자두\n바나나\n햇양파"
+    android:textSize="8sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.488"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.382" />
+
+    <TextView
+    android:id="@+id/textView53"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="청도 복숭아\n씨없는 수박\n햇양파\n애호박\n참외\n오이\n생블루베리"
+    android:textSize="8sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.488"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.753" />
+
+    <TextView
+    android:id="@+id/textView21"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="신비복숭아\n수박\n감자\n자두\n청양고추\n머스크메론\n파프리카"
+    android:textSize="6.5sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.751"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.382" />
+
+    <TextView
+    android:id="@+id/textView55"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="신비복숭아\n햇양파\n골드키위\n하우스밀감\n애호박\n블루베리\n하우스 수박"
+    android:textSize="8sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.75"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.754" />
+
+    <TextView
+    android:id="@+id/textView16"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="  9,980\n  8,900\n     990\n12,900\n  2,980\n  3,480\n10,980"
+    android:textSize="8sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.403"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.383" />
+
+    <TextView
+    android:id="@+id/textView52"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="  5,980\n  7,800\n  7,980\n  2,980\n     980\n  9,800\n     980"
+    android:textSize="8sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.403"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.753" />
+
+    <TextView
+    android:id="@+id/textView26"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="47,880\n23,980\n49,800"
+    android:textSize="8sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.403"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.465" />
+
+    <TextView
+    android:id="@+id/textView58"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="3,980\n1,980\n3,980"
+    android:textSize="8sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.409"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.81" />
+
+    <TextView
+    android:id="@+id/textView60"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="  9,440\n  2,544\n14,240"
+    android:textSize="8sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.403"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.861" />
+
+    <TextView
+    android:id="@+id/textView33"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="29,880\n   3,320\n   9,980"
+    android:textSize="8sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.4"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.515" />
+
+    <TextView
+    android:id="@+id/textView62"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="5,900\n1,980\n3,980"
+    android:textSize="8sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.657"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.81" />
+
+    <TextView
+    android:id="@+id/textView64"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="29,800\n12,800\n   9,440"
+    android:textSize="8sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.651"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.861" />
+
+    <TextView
+    android:id="@+id/textView28"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="   2,290\n   7,490\n11,940"
+    android:textSize="8sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.664"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.465" />
+
+    <TextView
+    android:id="@+id/textView20"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="9,900\n5,990\n6,990\n3,990\n6,990\n3,990\n4,700"
+    android:textSize="8sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.667"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.381" />
+
+    <TextView
+    android:id="@+id/textView54"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="  9,900\n19,990\n  4,480\n  1,000\n  9,900\n  1,990\n  9,900"
+    android:textSize="8sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.654"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.753" />
+
+    <TextView
+    android:id="@+id/textView22"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="  8,990\n18,990\n  3,490\n  8,990\n  1,590\n  8,990\n     890"
+    android:textSize="8sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.923"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.383" />
+
+    <TextView
+    android:id="@+id/textView56"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="  7,800\n  4,480\n  9,800\n  9,800\n     980\n  4,980\n15,800"
+    android:textSize="8sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.922"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.753" />
+
+    <TextView
+    android:id="@+id/textView31"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="13,840\n  3,490\n  2,030"
+    android:textSize="8sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.922"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.465" />
+
+    <TextView
+    android:id="@+id/textView66"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="14,800\n14,800\n14,800"
+    android:textSize="8sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.922"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.81" />
+
+    <TextView
+    android:id="@+id/textView68"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="9,800\n4,980\n9,800"
+    android:textSize="8sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.922"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.861" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

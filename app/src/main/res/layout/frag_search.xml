@@ -24,14 +24,16 @@
         android:ems="10"
         android:hint="검색어 입력"
         android:inputType="textPersonName"
+        android:backgroundTint="#F1C40F"
         android:privateImeOptions="defaultInputmode=korean"
         />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+         />
 
 
 </LinearLayout>

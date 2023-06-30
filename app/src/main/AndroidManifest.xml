@@ -16,6 +16,12 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".bottomnavigation.Cart_main"
+            android:exported="false" />
+        <activity
+            android:name=".bottomnavigation.OnSale"
+            android:exported="false" />
+        <activity
             android:name=".bottomnavigation.RecommandMain"
             android:exported="false" />
         <activity
